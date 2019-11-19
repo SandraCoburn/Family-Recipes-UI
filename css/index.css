@@ -156,12 +156,12 @@ p {
   line-height: 1.4;
 }
 .container {
-  max-width: 800px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
 }
 nav {
-  width: 85%;
+  width: 82%;
   margin-top: 1%;
   margin-left: 9em;
   background-color: #3AAFA9;
@@ -185,7 +185,8 @@ nav h1 {
 }
 nav div {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  align-content: flex-end;
 }
 @media (max-width: 500px) {
   nav div {
@@ -213,13 +214,17 @@ nav a {
 }
 footer {
   color: #22283B;
-  background: #f4f4f4;
+  width: 100%;
+  background: #3AAFA9;
   padding: 20px 0;
   border: 1px double #e0e0e0;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.footer {
+  width: 100%;
 }
 .earthPic {
   display: flex;
@@ -234,6 +239,9 @@ footer {
   .earthPic img {
     width: 100%;
   }
+}
+.home {
+  width: 80%;
 }
 .home .intro h2 {
   padding: 15px;
@@ -273,6 +281,45 @@ footer {
   .home .space-images .launch {
     display: none;
   }
+}
+.home .navLinksSec {
+  padding: 10%;
+}
+.home .navLinks {
+  display: flex;
+  justify-content: space-evenly;
+}
+.home .navLinks p {
+  width: 10%;
+  text-align: justify;
+}
+.home .box {
+  width: 80%;
+  height: 65%;
+  border-radius: 20px;
+  background: black;
+  margin: 20px 2.5%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home #bOne {
+  background-color: teal;
+}
+.home #bTwo {
+  background-color: orange;
+}
+.home #b3 {
+  background-color: lightseagreen;
+}
+.home #b4 {
+  background-color: orange;
+}
+.home a {
+  text-decoration: none;
+  font-size: 2.3rem;
+  color: teal;
 }
 .home .visit-planets {
   padding: 15px;
