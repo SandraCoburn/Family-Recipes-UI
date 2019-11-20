@@ -1,6 +1,6 @@
 // Navigation code here
 nav {
-        width: 85%;
+        width: 82%;
         //text-align: right;
         margin-top: 1%;
         margin-left: 9em;
@@ -31,7 +31,8 @@ nav {
         }
     div {
         display: flex;
-      justify-content: center;
+      justify-content: flex-end;
+      align-content: flex-end;
         
       @media @phone {
         justify-content: space-evenly;
@@ -49,15 +50,36 @@ nav {
         height: 25px;
         font-size: 1.3rem;
         border-radius: 8px;
-      
-    
+        .hoverAnim();
+
+
         color: white;
         text-align: center;
         padding: 3%;
-
         @media @phone {
         font-size: 1.5rem;
      }
     
+    }
+    .mainTitle {
+        display: flex;
+        justify-content: flex-start;
+        align-content: flex-start; 
+        padding: 0;
+       
+        h1 {
+            font-family: 'Marck Script', cursive;
+            font-weight: 400;
+        }
+
+        i {
+            padding: 1%;
+            margin-left: 2%;
+            margin-right: -2%;
+        }
+    }
+    #mainBt {
+        background-color: orange;
+        .hoverAnim();
     }
 }

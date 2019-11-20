@@ -142,7 +142,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: 'calligraffitti', sans-serif;
   color: #23293B;
 }
 h2 {
@@ -153,15 +153,16 @@ h3 {
 }
 p {
   font-size: 1.3rem;
+  font-family: 'tomorrow', sans-serif;
   line-height: 1.4;
 }
 .container {
-  max-width: 800px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
 }
 nav {
-  width: 85%;
+  width: 82%;
   margin-top: 1%;
   margin-left: 9em;
   background-color: #3AAFA9;
@@ -185,7 +186,8 @@ nav h1 {
 }
 nav div {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  align-content: flex-end;
 }
 @media (max-width: 500px) {
   nav div {
@@ -206,20 +208,52 @@ nav a {
   text-align: center;
   padding: 3%;
 }
+nav a:hover {
+  color: #3AAFA9;
+  background-color: white;
+  border: 1px solid #23293B;
+}
 @media (max-width: 500px) {
   nav a {
     font-size: 1.5rem;
   }
 }
+nav .mainTitle {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  padding: 0;
+}
+nav .mainTitle h1 {
+  font-family: 'Marck Script', cursive;
+  font-weight: 400;
+}
+nav .mainTitle i {
+  padding: 1%;
+  margin-left: 2%;
+  margin-right: -2%;
+}
+nav #mainBt {
+  background-color: orange;
+}
+nav #mainBt:hover {
+  color: #3AAFA9;
+  background-color: white;
+  border: 1px solid #23293B;
+}
 footer {
   color: #22283B;
-  background: #f4f4f4;
+  width: 100%;
+  background: #3AAFA9;
   padding: 20px 0;
   border: 1px double #e0e0e0;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.footer {
+  width: 100%;
 }
 .earthPic {
   display: flex;
@@ -234,6 +268,9 @@ footer {
   .earthPic img {
     width: 100%;
   }
+}
+.home {
+  width: 80%;
 }
 .home .intro h2 {
   padding: 15px;
@@ -274,6 +311,49 @@ footer {
     display: none;
   }
 }
+.home .navLinksSec {
+  padding: 10%;
+}
+.home .navLinks {
+  display: flex;
+  justify-content: space-evenly;
+}
+.home .navLinks p {
+  width: 10%;
+  text-align: justify;
+}
+.home .box {
+  width: 90%;
+  height: 75%;
+  border-radius: 20%;
+  background: black;
+  margin: 20px 2.5%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home i {
+  width: 42px;
+  height: 31px;
+}
+.home #bOne {
+  background-color: teal;
+}
+.home #bTwo {
+  background-color: orange;
+}
+.home #b3 {
+  background-color: teal;
+}
+.home #b4 {
+  background-color: orange;
+}
+.home a {
+  text-decoration: none;
+  font-size: 2.3rem;
+  color: teal;
+}
 .home .visit-planets {
   padding: 15px;
 }
@@ -295,6 +375,7 @@ footer {
 }
 .home .walk {
   margin-top: 60px;
+  background-color: #DEF2F1;
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
@@ -330,16 +411,16 @@ footer {
   background-color: #23293B;
   margin: 0 10px 20px;
   cursor: pointer;
-  width: 113px;
+  width: 246px;
   height: 42px;
   font-size: 2rem;
   border-radius: 10px;
   color: white;
   text-align: center;
-  padding: 3%;
+  padding: 2%;
 }
 .home .walk .walk-text .btn:hover {
-  color: #23293B;
+  color: #3AAFA9;
   background-color: white;
   border: 1px solid #23293B;
 }
@@ -355,7 +436,7 @@ footer {
     border-radius: 10px;
     color: white;
     text-align: center;
-    padding: 3%;
+    padding: 2%;
     height: 3em;
     padding: 5%;
     margin-left: 0;
@@ -371,6 +452,88 @@ footer {
   }
 }
 .home .walk .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.home .walk2 {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .home .walk2 {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 0;
+    padding: 3%;
+    margin-right: 6%;
+    margin-bottom: -7%;
+  }
+}
+.home .walk2 .walk-text {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk2 .walk-text {
+    width: 100%;
+    padding: 3%;
+  }
+}
+.home .walk2 .walk-text h3 {
+  margin-bottom: 13%;
+}
+.home .walk2 .walk-text p {
+  margin-bottom: 13%;
+}
+.home .walk2 .walk-text .btn {
+  display: block;
+  background-color: #23293B;
+  margin: 0 10px 20px;
+  cursor: pointer;
+  width: 246px;
+  height: 42px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  padding: 2%;
+}
+.home .walk2 .walk-text .btn:hover {
+  color: #3AAFA9;
+  background-color: white;
+  border: 1px solid #23293B;
+}
+@media (max-width: 500px) {
+  .home .walk2 .walk-text .btn {
+    display: block;
+    background-color: #23293B;
+    margin: 0 10px 20px;
+    cursor: pointer;
+    width: 17em;
+    height: 42px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    padding: 2%;
+    height: 3em;
+    padding: 5%;
+    margin-left: 0;
+  }
+}
+.home .walk2 .walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk2 .walk-img {
+    width: 100%;
+  }
+}
+.home .walk2 .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;

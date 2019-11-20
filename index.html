@@ -6,7 +6,7 @@
   <meta charset="utf-8">
 
   <title>Secret Family Recipes</title>
-
+  <script src="https://kit.fontawesome.com/a314862cfc.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
 
@@ -19,11 +19,14 @@
 
  <!-- navigation code here -->
  <nav id="navScroll">
-  <h1>Secreet Family Recipes Coookbook</h1>
+     <div class="mainTitle">
+        <i class="fas fa-hamburger fa-2x" style="color:aliceblue"></i>
+        <h1>Secret Family Recipes Coookbook</h1>
+    </div>
   <div>
   <!--<div class="btn"><a href="#">Home</a></div>-->
   <div><a href="#">About Us</a></div>
-  <div class="mainBt"><a href="#">Log In</a></div>
+  <div><a id="mainBt" href="#">Log In</a></div>
   <div><a href="#">Register</a></div>
   
 </div>
@@ -35,30 +38,58 @@
        <div class="earthPic">
           <img src="img/foodMain.jpg" alt="Food Picture">
         </div>
-    <div >
-      <h2><a href="#">Search</a></h2>
-      <h2><a href="#">Import</a></h2>
-      <h2><a href="#">Access</a></h2>
+    <section class="navLinksSec">
+    <div class="navLinks">
+            <div>
+                <div class="box" id="bOne"><a href="#"><i class="fas fa-search fa-2x"style="color:aliceblue"></i></a></div>
+                <div><h3><a href="#">Search</a></h3>
+                <p>your recipes</p>
+                </div>
+            </div>
+            <div>
+               <div class="box" id="bTwo"><a href="#"><i class="fas fa-download fa-2x" style="color:aliceblue"></i></a></div>
+                <div><h3><a href="#">Import</a></h3>
+                <p>your recipes</p>
+                </div>
+            </div>
+                <div>
+                    <div class="box" id="b3"><a href="#"><i class="fas fa-globe fa-2x" style="color:aliceblue"></i></a></div>
+                    <div><h3><a href="#">Access</a></h3>
+                    <p>your recipes</p>
+                </div>     
+             </div>
+             <div>
+                    <div class="box" id="b4"><a href="#"><i class="far fa-share-square fa-2x" style="color:aliceblue"></i></a></div>
+                    <div><h3><a href="#">Share</a></h3>
+                     <p>your recipes</p>
+                     <p></p>
+                     </div>     
+                  </div>
+            <div>
+        </div>
     </div>
-      
+   </section>
     </header>
 
-    <section class="space-images">
-        <img src="img/blast.png" class="blast" alt="Rocket blasting off">
-        <img src="img/sky.png" class="sky" alt="Space sky image">
-        <img src="img/launch.png" class="launch" alt="Launching rocket">
-    </section>
-   
-    <section class="visit-planets">
-     
-      <h3>Search New Recipes</h3>
-    
-      <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet.</p>
-    
-      <p>Which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it.</p>
-    </section>
-    
     <section class="walk">
+            <div class="walk-text">
+              <h3>Search Your Recipes</h3>
+      
+              <p>The Earth was small, light blue, and so touchingly alone, our home that must be defended like a holy relic. The Earth was absolutely round.</p>
+            
+              <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
+            
+              <div class="btn">
+                Search
+              </div>
+            </div>
+            
+            <div class="walk-img">
+                <img src="img/recipeBook.jpg" alt="Space walking astronaut">
+            </div>
+      
+          </section> 
+    <section class="walk2">
       <div class="walk-text">
         <h3>Import Your Favorite Recipe</h3>
 
@@ -67,20 +98,56 @@
         <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
       
         <div class="btn">
-          Sign Up
+          Import
         </div>
       </div>
       
       <div class="walk-img">
-          <img src="img/space-walk.png" alt="Space walking astronaut">
+          <img src="img/laptop.JPG" alt="Computer Screen">
       </div>
 
     </section>
-
-    <footer>
-      <p>Copyright Secret Family Recipes Cookboook 2019</p>
-    </footer>
-
+    <section class="walk">
+            <div class="walk-text">
+              <h3>Access your recipes everywhere</h3>
+      
+              <p>The Earth was small, light blue, and so touchingly alone, our home that must be defended like a holy relic. The Earth was absolutely round.</p>
+            
+              <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
+            
+              <div class="btn">
+                Access
+              </div>
+            </div>
+            
+            <div class="walk-img">
+                <img src="img/devices.jpg" alt="Space walking astronaut">
+            </div>
+      
+          </section>
+    <section class="walk2">
+            <div class="walk-text">
+              <h3>Share your favorite recipes with your friends</h3>
+      
+              <p>The Earth was small, light blue, and so touchingly alone, our home that must be defended like a holy relic. The Earth was absolutely round.</p>
+            
+              <!--<p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>-->
+            
+              <div class="btn">
+                Share
+              </div>
+            </div>
+            
+            <div class="walk-img">
+                <img src="img/foodShare.jpg" alt="Space walking astronaut">
+            </div>
+      
+          </section>
+          <section class="footer">
+            <footer>
+            <p>Copyright Secret Family Recipes Cookboook 2019</p>
+            </footer>
+        </section>  
   </div>
 </body>
 </html>
