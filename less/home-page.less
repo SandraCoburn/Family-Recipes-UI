@@ -1,6 +1,6 @@
 // Home Content
 
-.earthPic {
+.saladPic {
   display: flex;
   justify-content: center;
   padding-top: 130px;
@@ -29,12 +29,21 @@
 
     p {
       padding:0 15px;
+      @media @phone {
+        display: none;
+      }
     }
     @media @phone {
-      padding: 5%;
+      padding: 1%;
       text-align: justify;
       margin-top: 0;
+
+      h2 {
+        font-size: .2rem;
+        margin-right: 1%;
+      }
     }
+    
   }
 
   .space-images {
@@ -52,7 +61,7 @@
       display: block;
       
       img {
-        width: 86%;
+        width: 90%;
         margin-left: 7%;
       }
       .sky {
@@ -66,11 +75,20 @@
     }
   }
   .navLinksSec {
-    padding: 10%;
+    padding: 5%;
+
+    @media @phone {
+      padding: 0;
+    }
   }
   .navLinks {
     display: flex;
     justify-content: space-evenly;
+
+    @media @phone {
+      justify-content: space-around;
+      margin-left: 5%;
+    }
 
     p {
       width: 10%;
@@ -88,11 +106,16 @@
     align-items: center;
     justify-content: center;
 
+    @media @phone {
+      height: 45%;
+      width: 97%;
+    }
     
   }
   i {
     width: 42px;
     height: 31px;
+    
   }
         #bOne {
           background-color:teal;
@@ -110,6 +133,11 @@ a {
   text-decoration: none;
   font-size: 2.3rem;
   color: teal;
+
+  @media @phone {
+    font-size: 1.5rem;
+    padding: 1%;
+  }
 }
 
   .visit-planets {
@@ -123,7 +151,7 @@ a {
       margin-top: 13px;
     }
     @media @phone {
-      padding: 7%;
+      padding: 1%;
       text-align: justify;
       margin-bottom: 0;
     }
@@ -143,10 +171,10 @@ a {
     @media @phone {
       display: flex;
       flex-direction: column-reverse;
-      margin-top: 0;
+      margin-top: 10%;
       padding: 3%;
-      margin-right: 6%;
-      margin-bottom: -7%;
+      margin-right: 0;
+      margin-bottom: 1%;
     }
 
     .walk-text {
@@ -158,20 +186,29 @@ a {
 
       h3 {
         margin-bottom: 10px;
+        margin-bottom: 3%;
+
+        @media @phone {
+          font-size: 1.8rem;
+          text-align: center;
+        }
       }
 
       p {
         margin-bottom: 26px;
+        @media @phone {
+          text-align: center;
+        }
       }
 
       .btn {
         .customButton(246px,white);
         .hoverAnim();
         @media @phone {
-          .customButton(17em, white);
+          .customButton(97%, white);
           height: 3em;
-          padding: 5%;
-          margin-left: 0;
+          padding: 7%;
+          margin-left: 5px;
         }
 
       }
@@ -180,9 +217,12 @@ a {
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      border-radius: 10px;
       
       @media @phone {
         .wSize();
+        padding-right: 9%;
+        padding-top: 9%;
       }
       img {
         .wSize();
@@ -197,6 +237,7 @@ a {
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    align-items: center;
 
     @media @phone {
       display: flex;
@@ -209,27 +250,36 @@ a {
 
     .walk-text {
       width: 50%;
+      padding: 5%;
       @media @phone {
        .wSize();
         padding: 3%;
       }
 
       h3 {
-        margin-bottom: 13%;
+        margin-bottom: 4%;
+        @media @phone {
+          font-size: 1.8rem;
+          text-align: center;
+        }
       }
 
       p {
         margin-bottom: 13%;
+        margin-bottom: 26px;
+        @media @phone {
+          text-align: center;
+        }
       }
 
       .btn {
         .customButton(246px,white);
         .hoverAnim();
         @media @phone {
-          .customButton(17em, white);
+          .customButton(97%, white);
           height: 3em;
-          padding: 5%;
-          margin-left: 0;
+          padding: 7%;
+          margin-left: 5px;
         }
 
       }
@@ -238,7 +288,9 @@ a {
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+      #lapT {
+      border-radius: 10px;
+       }
       @media @phone {
         .wSize();
       }
