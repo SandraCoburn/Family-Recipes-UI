@@ -78,15 +78,21 @@
     }
   }
   .box {
-    width: 80%;
-    height: 65%;
-    border-radius: 20px;
+    width: 90%;
+    height: 75%;
+    border-radius: 20%;
     background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    
+  }
+  i {
+    width: 42px;
+    height: 31px;
   }
         #bOne {
           background-color:teal;
@@ -95,7 +101,7 @@
           background-color: orange;
       }
       #b3 {
-          background-color: lightseagreen;
+          background-color: teal;
       }
       #b4 {
           background-color: orange;
@@ -128,6 +134,7 @@ a {
 
   .walk {
     margin-top: 60px;
+    background-color: #DEF2F1;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
     display: flex;
@@ -158,7 +165,65 @@ a {
       }
 
       .btn {
-        .customButton(113px,white);
+        .customButton(246px,white);
+        .hoverAnim();
+        @media @phone {
+          .customButton(17em, white);
+          height: 3em;
+          padding: 5%;
+          margin-left: 0;
+        }
+
+      }
+    }
+
+    .walk-img {
+      width: 46%;
+      margin-left: 4%;
+      
+      @media @phone {
+        .wSize();
+      }
+      img {
+        .wSize();
+        height: auto;
+        border-radius: 10px;
+      }
+    }
+  }
+  .walk2 {
+    margin-top: 60px;
+    border-top: 1px solid @main-border-color;
+    padding: 50px 60px;
+    display: flex;
+    justify-content: center;
+
+    @media @phone {
+      display: flex;
+      flex-direction: column-reverse;
+      margin-top: 0;
+      padding: 3%;
+      margin-right: 6%;
+      margin-bottom: -7%;
+    }
+
+    .walk-text {
+      width: 50%;
+      @media @phone {
+       .wSize();
+        padding: 3%;
+      }
+
+      h3 {
+        margin-bottom: 13%;
+      }
+
+      p {
+        margin-bottom: 13%;
+      }
+
+      .btn {
+        .customButton(246px,white);
         .hoverAnim();
         @media @phone {
           .customButton(17em, white);
