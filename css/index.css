@@ -334,6 +334,7 @@ footer {
 }
 .home .navLinksSec {
   padding: 5%;
+  margin-left: 6%;
 }
 @media (max-width: 500px) {
   .home .navLinksSec {
@@ -342,7 +343,7 @@ footer {
 }
 .home .navLinks {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 @media (max-width: 500px) {
   .home .navLinks {
@@ -350,8 +351,20 @@ footer {
     margin-left: 5%;
   }
 }
+.home .navLinks .linkNav {
+  margin-left: 10%;
+}
+.home .navLinks h3 {
+  margin-left: 15%;
+}
+.home .navLinks h3:hover {
+  color: #3AAFA9;
+  background-color: white;
+  border: 1px solid #23293B;
+}
 .home .navLinks p {
   width: 10%;
+  margin-left: 15%;
   text-align: justify;
 }
 .home .box {
@@ -377,6 +390,8 @@ footer {
 }
 .home #bOne {
   background-color: teal;
+  box-shadow: 0 1px 2px 4px #362a2a;
+  transition: background 0.2s, color 0.2s;
 }
 .home #bTwo {
   background-color: orange;
@@ -445,7 +460,6 @@ footer {
   }
 }
 .home .walk .walk-text h3 {
-  margin-bottom: 10px;
   margin-bottom: 3%;
 }
 @media (max-width: 500px) {
@@ -522,6 +536,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row-reverse;
 }
 @media (max-width: 500px) {
   .home .walk2 {
@@ -598,8 +613,9 @@ footer {
   }
 }
 .home .walk2 .walk-img {
-  width: 46%;
+  width: 41%;
   margin-left: 4%;
+  padding-right: 2%;
 }
 .home .walk2 .walk-img #lapT {
   border-radius: 10px;
