@@ -640,6 +640,10 @@ footer {
   align-content: center;
   margin: 8%;
 }
+.about-cont .about-card {
+  background-color: beige;
+  border: solid black;
+}
 .about-cont h3 {
   padding: 15px;
   font-size: 4rem;
@@ -673,28 +677,30 @@ footer {
   padding: 0 15px;
 }
 .meet-team {
-  width: 90%;
+  width: 75%;
   margin: auto;
 }
 .meet-team .content-card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  align-content: center;
   margin: 2%;
   padding: 2%;
   width: 100%;
-  border: solid 2px red;
+  border: solid 2px;
 }
 .meet-team .content-card .img-box {
-  width: 30%;
+  width: 50%;
   height: 100%;
 }
 .meet-team .content-card .img-box img {
-  width: 40%;
+  width: 30%;
+  border-radius: 30px;
 }
 .meet-team .person-info {
   width: 50%;
+  padding: 2%;
+  background: beige;
 }
 .meet-team .person-info h2 {
   padding: 15px;
