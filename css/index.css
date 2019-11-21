@@ -538,3 +538,97 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+nav {
+  width: 82%;
+  margin-top: 1%;
+  margin-left: 9em;
+  background-color: #3AAFA9;
+  margin-bottom: auto;
+  position: fixed;
+  border-radius: 10px;
+  top: 0;
+}
+@media (max-width: 500px) {
+  nav {
+    width: 90%;
+    margin-left: 5%;
+    padding: 2%;
+  }
+}
+nav h1 {
+  text-align: left;
+  font-size: 2em;
+  color: whitesmoke;
+  padding: 18px;
+}
+nav div {
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+}
+@media (max-width: 500px) {
+  nav div {
+    justify-content: space-evenly;
+  }
+}
+nav a {
+  display: block;
+  text-decoration: none;
+  background-color: #17252A;
+  margin: 0 10px 20px;
+  cursor: pointer;
+  width: 100px;
+  height: 25px;
+  font-size: 1.3rem;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  padding: 3%;
+}
+nav a:hover {
+  color: #3AAFA9;
+  background-color: white;
+  border: 1px solid #23293B;
+}
+@media (max-width: 500px) {
+  nav a {
+    font-size: 1.5rem;
+  }
+}
+nav .mainTitle {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  padding: 0;
+}
+nav .mainTitle h1 {
+  font-family: 'Marck Script', cursive;
+  font-weight: 400;
+}
+nav .mainTitle i {
+  padding: 1%;
+  margin-left: 2%;
+  margin-right: -2%;
+}
+nav #mainBt {
+  background-color: orange;
+}
+nav #mainBt:hover {
+  color: #3AAFA9;
+  background-color: white;
+  border: 1px solid #23293B;
+}
+footer {
+  color: #22283B;
+  width: 100%;
+  background: #3AAFA9;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer {
+  width: 100%;
+}
