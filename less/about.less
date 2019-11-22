@@ -12,6 +12,12 @@
     align-content: center;
     margin: 8%;
 
+    @media @phone {
+        flex-direction: column-reverse;
+        margin-top: 30%;
+
+    }
+
     .about-card {
         background-color: @background;
         border: solid black;
@@ -26,6 +32,8 @@
         font-size: 2rem;
         padding: 0 15px;
       }
+      
+      
     
 
 }
@@ -46,6 +54,10 @@
     justify-content: center;
     align-items: center;
     margin: 4%;
+
+    @media @phone {
+        flex-direction: column;
+    }
 
     h2 {
     padding: 15px;
@@ -71,14 +83,23 @@
         width: 100%;
         border: solid 2px;
 
-
         .img-box{
             width: 50%;
             height: 100%;
+            padding: 10%;
+
+            @media @phone {
+                width: 100%;
+                text-align: center;
+            }
 
             img {
                 width: 30%;
                 border-radius: 30px;
+                
+                @media @phone {
+                    width: 60%;
+                }
             }
             
         }   
@@ -88,6 +109,11 @@
         width: 50%;
         padding: 2%;
         background: @background;
+
+        @media @phone {
+            flex-direction: column-reverse;
+            width: 100%;
+        }
     
         h2 {
             padding: 15px;
