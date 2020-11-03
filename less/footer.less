@@ -1,25 +1,29 @@
 // Footer Styles
-footer {
-  color: #22283B;
-  width: 100%;
-  background: @main-green;
-  padding: 20px 0;
-  border: 1px double #e0e0e0;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  @media @phone {
-    justify-content: left;
-  }
-
-  @media @phone {
-    p {
-      font-size: .8rem;
-    } 
-  }
-}
 .footer {
   width: 100%;
+  padding: 0;
+  margin-right: 0;
+
+  footer {
+    color: #22283b;
+    width: auto;
+    background: @main-green;
+    padding: 20px 0;
+    border: 1px double #e0e0e0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+    @media @phone {
+      justify-content: left;
+    }
+
+    @media @phone {
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
 }

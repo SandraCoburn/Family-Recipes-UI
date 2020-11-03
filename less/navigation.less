@@ -1,87 +1,76 @@
 // Navigation code here
 nav {
-        width: 82%;
-        //text-align: right;
-        margin-top: 1%;
-        margin-left: 9em;
-        background-color: @main-green;
-        margin-bottom: auto;
-        position: fixed;
-        border-radius: 10px;
-        top: 0;
-        
-      
+  width: 100%;
+  background-color: @main-green;
+  margin-bottom: auto;
+  position: fixed;
+  border-radius: 10px;
+  top: 0;
+  opacity: 0.9;
 
+  @media @phone {
+    width: 90%;
+    margin-left: 5%;
+    padding: 0;
+  }
 
+  h1 {
+    text-align: left;
+    font-size: 2em;
+    color: whitesmoke;
 
-        @media @phone {
-        width: 90%;
-        margin-left: 5%;
-        padding: 0;
-        }
-   
-    
-        h1 {
-        text-align: left;
-        font-size: 2em;
-        color: whitesmoke;
-       
-        padding: 18px;
-        
-        }
-    div {
-        display: flex;
-      justify-content: flex-end;
-      align-content: flex-end;
-        
-      @media @phone {
-        justify-content: space-evenly;
+    padding: 18px;
+  }
+  div {
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+
+    @media @phone {
+      justify-content: space-evenly;
+    }
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    background-color: #17252a;
+    margin: 0 10px 20px;
+    cursor: pointer;
+    width: 100px;
+    height: 25px;
+    font-size: 1.3rem;
+    border-radius: 8px;
+    .hoverAnim();
+
+    color: white;
+    text-align: center;
+    padding: 3%;
+    @media @phone {
+      font-size: 1rem;
+      width: 80%;
+      padding: 5%;
+    }
+  }
+  .mainTitle {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    padding: 0;
+
+    h1 {
+      font-family: 'Marck Script', cursive;
+      font-weight: 400;
     }
 
+    i {
+      padding: 1%;
+      margin-left: 2%;
+      margin-right: -2%;
     }
-	
-	a {
-        display: block;
-        text-decoration: none;
-        background-color: #17252A;
-        margin: 0 10px 20px;
-        cursor: pointer;
-        width: 100px;
-        height: 25px;
-        font-size: 1.3rem;
-        border-radius: 8px;
-        .hoverAnim();
-
-
-        color: white;
-        text-align: center;
-        padding: 3%;
-        @media @phone {
-        font-size: 1rem;
-        width: 80%;
-        padding: 5%;
-     }
-    
-    }
-    .mainTitle {
-        display: flex;
-        justify-content: flex-start;
-        align-content: flex-start; 
-        padding: 0;
-       
-        h1 {
-            font-family: 'Marck Script', cursive;
-            font-weight: 400;
-        }
-
-        i {
-            padding: 1%;
-            margin-left: 2%;
-            margin-right: -2%;
-        }
-    }
-    #mainBt {
-        background-color: orange;
-        .hoverAnim();
-    }
+  }
+  #mainBt {
+    background-color: orange;
+    .hoverAnim();
+  }
 }

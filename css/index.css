@@ -136,6 +136,8 @@ html,
 body {
   font-family: 'Ubuntu', sans-serif;
   color: #5E6164;
+  width: auto;
+  box-sizing: border-box;
 }
 h1,
 h2,
@@ -158,18 +160,18 @@ p {
 }
 .container {
   max-width: 1000px;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 nav {
-  width: 82%;
-  margin-top: 1%;
-  margin-left: 9em;
+  width: 100%;
   background-color: #3AAFA9;
   margin-bottom: auto;
   position: fixed;
   border-radius: 10px;
   top: 0;
+  opacity: 0.9;
 }
 @media (max-width: 500px) {
   nav {
@@ -197,7 +199,7 @@ nav div {
 nav a {
   display: block;
   text-decoration: none;
-  background-color: #17252A;
+  background-color: #17252a;
   margin: 0 10px 20px;
   cursor: pointer;
   width: 100px;
@@ -243,9 +245,14 @@ nav #mainBt:hover {
   background-color: white;
   border: 1px solid #23293B;
 }
-footer {
-  color: #22283B;
+.footer {
   width: 100%;
+  padding: 0;
+  margin-right: 0;
+}
+.footer footer {
+  color: #22283b;
+  width: auto;
   background: #3AAFA9;
   padding: 20px 0;
   border: 1px double #e0e0e0;
@@ -253,28 +260,30 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 @media (max-width: 500px) {
-  footer {
+  .footer footer {
     justify-content: left;
   }
 }
 @media (max-width: 500px) {
-  footer p {
+  .footer footer p {
     font-size: 0.8rem;
   }
-}
-.footer {
-  width: 100%;
 }
 .saladPic {
   display: flex;
   justify-content: center;
-  padding-top: 130px;
+  padding-top: 8%;
 }
 .saladPic img {
   border-radius: 0;
   width: 100%;
+  object-fit: cover;
+  height: 300px;
+  margin: 0;
+  border-radius: 2%;
 }
 @media (max-width: 500px) {
   .saladPic img {
@@ -282,7 +291,8 @@ footer {
   }
 }
 .home {
-  width: 80%;
+  width: 100%;
+  padding: 1% 5%;
 }
 .home .intro h2 {
   padding: 15px;
@@ -304,32 +314,6 @@ footer {
   .home .intro h2 {
     font-size: 0.2rem;
     margin-right: 1%;
-  }
-}
-.home .space-images {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
-.home .space-images img {
-  width: 28%;
-  margin: 20px 2.5%;
-  border-radius: 20px;
-  height: 100%;
-}
-@media (max-width: 500px) {
-  .home .space-images {
-    display: block;
-  }
-  .home .space-images img {
-    width: 90%;
-    margin-left: 7%;
-  }
-  .home .space-images .sky {
-    display: none;
-  }
-  .home .space-images .launch {
-    display: none;
   }
 }
 .home .navLinksSec {
@@ -368,7 +352,7 @@ footer {
   text-align: justify;
 }
 .home .box {
-  width: 90%;
+  width: 100%;
   height: 75%;
   border-radius: 20%;
   background: black;
@@ -413,35 +397,17 @@ footer {
     padding: 1%;
   }
 }
-.home .visit-planets {
-  padding: 15px;
-}
-.home .visit-planets h3 {
-  margin-top: 11px;
-}
-.home .visit-planets p {
-  margin-top: 13px;
-}
-@media (max-width: 500px) {
-  .home .visit-planets {
-    padding: 1%;
-    text-align: justify;
-    margin-bottom: 0;
-  }
-}
-.home .visit-planets h3 {
-  font-size: 2.3rem;
-}
-.home .walk {
+.home .search {
   margin-top: 60px;
-  background-color: #DEF2F1;
+  background-color: #def2f1;
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
   justify-content: center;
+  border-radius: 2%;
 }
 @media (max-width: 500px) {
-  .home .walk {
+  .home .search {
     display: flex;
     flex-direction: column-reverse;
     margin-top: 10%;
@@ -450,33 +416,33 @@ footer {
     margin-bottom: 1%;
   }
 }
-.home .walk .walk-text {
+.home .search .search-text {
   width: 50%;
 }
 @media (max-width: 500px) {
-  .home .walk .walk-text {
+  .home .search .search-text {
     width: 100%;
     padding: 3%;
   }
 }
-.home .walk .walk-text h3 {
+.home .search .search-text h3 {
   margin-bottom: 3%;
 }
 @media (max-width: 500px) {
-  .home .walk .walk-text h3 {
+  .home .search .search-text h3 {
     font-size: 1.8rem;
     text-align: center;
   }
 }
-.home .walk .walk-text p {
+.home .search .search-text p {
   margin-bottom: 26px;
 }
 @media (max-width: 500px) {
-  .home .walk .walk-text p {
+  .home .search .search-text p {
     text-align: center;
   }
 }
-.home .walk .walk-text .btn {
+.home .search .search-text .btn {
   display: block;
   background-color: #23293B;
   margin: 0 10px 20px;
@@ -489,13 +455,13 @@ footer {
   text-align: center;
   padding: 2%;
 }
-.home .walk .walk-text .btn:hover {
+.home .search .search-text .btn:hover {
   color: #3AAFA9;
   background-color: white;
   border: 1px solid #23293B;
 }
 @media (max-width: 500px) {
-  .home .walk .walk-text .btn {
+  .home .search .search-text .btn {
     display: block;
     background-color: #23293B;
     margin: 0 10px 20px;
@@ -512,24 +478,24 @@ footer {
     margin-left: 5px;
   }
 }
-.home .walk .walk-img {
+.home .search .recipe-book-img {
   width: 46%;
   margin-left: 4%;
-  border-radius: 10px;
+  border-radius: 2%;
 }
 @media (max-width: 500px) {
-  .home .walk .walk-img {
+  .home .search .recipe-book-img {
     width: 100%;
     padding-right: 9%;
     padding-top: 9%;
   }
 }
-.home .walk .walk-img img {
+.home .search .recipe-book-img img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 2%;
 }
-.home .walk2 {
+.home .import-recipe {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
@@ -539,7 +505,7 @@ footer {
   flex-direction: row-reverse;
 }
 @media (max-width: 500px) {
-  .home .walk2 {
+  .home .import-recipe {
     display: flex;
     flex-direction: column-reverse;
     margin-top: 0;
@@ -548,35 +514,35 @@ footer {
     margin-bottom: -7%;
   }
 }
-.home .walk2 .walk-text {
+.home .import-recipe .import-text {
   width: 50%;
   padding: 5%;
 }
 @media (max-width: 500px) {
-  .home .walk2 .walk-text {
+  .home .import-recipe .import-text {
     width: 100%;
     padding: 3%;
   }
 }
-.home .walk2 .walk-text h3 {
+.home .import-recipe .import-text h3 {
   margin-bottom: 4%;
 }
 @media (max-width: 500px) {
-  .home .walk2 .walk-text h3 {
+  .home .import-recipe .import-text h3 {
     font-size: 1.8rem;
     text-align: center;
   }
 }
-.home .walk2 .walk-text p {
+.home .import-recipe .import-text p {
   margin-bottom: 13%;
   margin-bottom: 26px;
 }
 @media (max-width: 500px) {
-  .home .walk2 .walk-text p {
+  .home .import-recipe .import-text p {
     text-align: center;
   }
 }
-.home .walk2 .walk-text .btn {
+.home .import-recipe .import-text .btn {
   display: block;
   background-color: #23293B;
   margin: 0 10px 20px;
@@ -589,13 +555,13 @@ footer {
   text-align: center;
   padding: 2%;
 }
-.home .walk2 .walk-text .btn:hover {
+.home .import-recipe .import-text .btn:hover {
   color: #3AAFA9;
   background-color: white;
   border: 1px solid #23293B;
 }
 @media (max-width: 500px) {
-  .home .walk2 .walk-text .btn {
+  .home .import-recipe .import-text .btn {
     display: block;
     background-color: #23293B;
     margin: 0 10px 20px;
@@ -612,86 +578,92 @@ footer {
     margin-left: 5px;
   }
 }
-.home .walk2 .walk-img {
+.home .import-recipe .laptop-img {
   width: 41%;
   margin-left: 4%;
   padding-right: 2%;
-}
-.home .walk2 .walk-img #lapT {
-  border-radius: 10px;
+  border-radius: 2%;
 }
 @media (max-width: 500px) {
-  .home .walk2 .walk-img {
+  .home .import-recipe .laptop-img {
     width: 100%;
   }
 }
-.home .walk2 .walk-img img {
+.home .import-recipe .laptop-img img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 2%;
 }
 .container-home {
   width: 90%;
+  padding-top: 5%;
+  box-sizing: border-box;
 }
-.about-cont {
+.container-home .about-cont {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-content: center;
-  margin: 8%;
+  padding: 5%;
+  padding-right: 1%;
+  margin-left: 8%;
+  box-sizing: border-box;
 }
 @media (max-width: 500px) {
-  .about-cont {
+  .container-home .about-cont {
     flex-direction: column-reverse;
     margin-top: 30%;
   }
 }
-.about-cont .about-card {
+.container-home .about-cont .about-card {
   background-color: beige;
   border: solid black;
 }
-.about-cont h3 {
+.container-home .about-cont h3 {
   padding: 15px;
-  font-size: 4rem;
-}
-.about-cont p {
   font-size: 2rem;
+}
+.container-home .about-cont p {
+  font-size: 1.5rem;
   padding: 0 15px;
 }
-.collab-meeting {
+.container-home .collab-meeting {
   display: flex;
   justify-content: center;
 }
-.collab-meeting img {
-  max-height: 40%;
-  width: 60%;
+.container-home .collab-meeting img {
+  max-height: 300px;
+  width: 100%;
   border-radius: 10px;
+  object-fit: cover;
+  padding-left: 12%;
 }
-.team {
+.container-home .team {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 4%;
+  padding: 2%;
+  margin: 2%;
 }
 @media (max-width: 500px) {
-  .team {
+  .container-home .team {
     flex-direction: column;
   }
 }
-.team h2 {
+.container-home .team h2 {
   padding: 15px;
-  font-size: 4rem;
+  font-size: 3rem;
 }
-.team p {
-  font-size: 2rem;
+.container-home .team p {
+  font-size: 1.5rem;
   padding: 0 15px;
 }
-.meet-team {
-  width: 75%;
-  margin: auto;
+.container-home .meet-team {
+  width: 90%;
+  padding-left: 15%;
 }
-.meet-team .content-card {
+.container-home .meet-team .content-card {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -699,44 +671,45 @@ footer {
   padding: 2%;
   width: 100%;
   border: solid 2px;
+  box-shadow: 5px 10px #888888;
 }
-.meet-team .content-card .img-box {
+.container-home .meet-team .content-card .img-box {
   width: 50%;
   height: 100%;
   padding: 2%;
 }
 @media (max-width: 500px) {
-  .meet-team .content-card .img-box {
+  .container-home .meet-team .content-card .img-box {
     width: 100%;
     text-align: center;
   }
 }
-.meet-team .content-card .img-box img {
+.container-home .meet-team .content-card .img-box img {
   width: 55%;
   border-radius: 20px;
   text-align: end;
 }
 @media (max-width: 500px) {
-  .meet-team .content-card .img-box img {
+  .container-home .meet-team .content-card .img-box img {
     width: 60%;
   }
 }
-.meet-team .person-info {
+.container-home .meet-team .person-info {
   width: 50%;
   padding: 2%;
   background: beige;
 }
 @media (max-width: 500px) {
-  .meet-team .person-info {
+  .container-home .meet-team .person-info {
     flex-direction: column-reverse;
     width: 100%;
   }
 }
-.meet-team .person-info h2 {
+.container-home .meet-team .person-info h2 {
   padding: 15px;
-  font-size: 4rem;
+  font-size: 3rem;
 }
-.meet-team .person-info p {
-  font-size: 2rem;
+.container-home .meet-team .person-info p {
+  font-size: 1.5rem;
   padding: 0 15px;
 }
