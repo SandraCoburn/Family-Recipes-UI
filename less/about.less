@@ -1,132 +1,129 @@
-
 .container-home {
-    width: 90%;
+  width: 90%;
+  padding-top: 5%;
+  box-sizing: border-box;
 
-}
-
-
-.about-cont {
+  .about-cont {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
-    margin: 8%;
+    padding: 5%;
+    padding-right: 1%;
+    margin-left: 8%;
+    box-sizing: border-box;
 
     @media @phone {
-        flex-direction: column-reverse;
-        margin-top: 30%;
-
+      flex-direction: column-reverse;
+      margin-top: 30%;
     }
 
     .about-card {
-        background-color: @background;
-        border: solid black;
+      background-color: @background;
+      border: solid black;
     }
-    
+
     h3 {
-        padding: 15px;
-        font-size: 4rem;
-      }
-  
-     p {
-        font-size: 2rem;
-        padding: 0 15px;
-      }
-      
-      
-    
+      padding: 15px;
+      font-size: 2rem;
+    }
 
-}
+    p {
+      font-size: 1.5rem;
+      padding: 0 15px;
+    }
+  }
 
-.collab-meeting {
+  .collab-meeting {
     display: flex;
     justify-content: center;
     img {
-        max-height: 40%;
-        width: 60%;
-        border-radius: 10px;
+      max-height: 300px;
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+      padding-left: 12%;
     }
-}
+  }
 
-.team {
+  .team {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 4%;
+    padding: 2%;
+    margin: 2%;
 
     @media @phone {
-        flex-direction: column;
+      flex-direction: column;
     }
 
     h2 {
-    padding: 15px;
-    font-size: 4rem;
+      padding: 15px;
+      font-size: 3rem;
     }
-    
-    p{
-        font-size: 2rem;
-        padding: 0 15px;   
-    }
-}
 
-.meet-team {
-    width: 75%;
-    margin: auto;
+    p {
+      font-size: 1.5rem;
+      padding: 0 15px;
+    }
+  }
+
+  .meet-team {
+    width: 90%;
+    padding-left: 15%;
 
     .content-card {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin: 2%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 2%;
+      padding: 2%;
+      width: 100%;
+      border: solid 2px;
+      box-shadow: 5px 10px #888888;
+
+      .img-box {
+        width: 50%;
+        height: 100%;
         padding: 2%;
-        width: 100%;
-        border: solid 2px;
 
-        .img-box{
-            width: 50%;
-            height: 100%;
-            padding: 2%;
+        @media @phone {
+          .wSize();
+          text-align: center;
+        }
 
-            @media @phone {
-                .wSize();
-                text-align: center;
-            }
+        img {
+          width: 55%;
+          border-radius: 20px;
+          text-align: end;
 
-            img {
-                width: 55%;
-                border-radius: 20px;
-                text-align: end;
-                
-                @media @phone {
-                    width: 60%;
-                }
-            }
-            
-        }   
+          @media @phone {
+            width: 60%;
+          }
+        }
+      }
     }
 
     .person-info {
-        width: 50%;
-        padding: 2%;
-        background: @background;
+      width: 50%;
+      padding: 2%;
+      background: @background;
 
-        @media @phone {
-            flex-direction: column-reverse;
-            .wSize();
-        }
-    
-        h2 {
-            padding: 15px;
-            font-size: 4rem;
-            }
-    
-            p {
-            font-size: 2rem;
-            padding: 0 15px;   
-            }
+      @media @phone {
+        flex-direction: column-reverse;
+        .wSize();
+      }
+
+      h2 {
+        padding: 15px;
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+        padding: 0 15px;
+      }
     }
+  }
 }
-
-
-
